@@ -1,0 +1,52 @@
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.keyboard-row {
+  display: flex;
+  gap: 0.4rem;
+}
+.key {
+  color: white;
+  width: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 2.75rem;
+  border: 0.1rem solid rgba(40, 40, 40, 0.226);
+  border-radius: 0.3rem;
+  background-color: rgb(133, 129, 129);
+  transition: background-color 0.1s ease;
+  cursor: pointer;
+}
+.key:hover {
+  background-color: rgb(40, 40, 40);
+}
+.key.wide {
+  width: 6rem;
+  font-size: 1rem;
+}
+.key.active {
+  background-color: rgb(45, 45, 45);
+  transition: background-color 0.1s ease;
+}
+.key.correct {
+  background-color: rgb(11, 226, 11);
+  color: white;
+  transition: background-color 6s ease;
+}
+.key.present {
+  background-color: gold;
+  color: rgb(255, 255, 255);
+  transition: background-color 6s ease;
+}
+.key.absent {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  transition: background-color 6s ease;
+}

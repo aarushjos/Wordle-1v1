@@ -1,0 +1,75 @@
+.lobby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f0f0f0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #2a2a40;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.inputs div {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.inputs input {
+  padding: 1rem 0.5rem;
+  width: 20vw;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  background-color: #383854;
+  color: #ffffff;
+  caret-color: #00ffcc;
+  transition: box-shadow 0.2s ease;
+  outline: none;
+}
+
+.inputs input:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.choice-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.choice-buttons button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: gray;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.choice-buttons button:hover {
+  background-color: #00ffcc;
+  color: #1e1e2f;
+}
+
+input::placeholder {
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.365);
+}

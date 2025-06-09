@@ -1,0 +1,83 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  color: white;
+}
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cell {
+  width: 3rem;
+  height: 3rem;
+  padding: 1.2rem;
+  border: 0.1rem solid rgba(133, 129, 129, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  transition: background-color 1s ease;
+}
+
+.cell.flip.correct {
+  animation: flip-green 1s ease forwards;
+}
+.cell.flip.present {
+  animation: flip-gold 1s ease forwards;
+}
+.cell.flip.absent {
+  animation: flip-gray 1s ease forwards;
+}
+
+@keyframes flip-green {
+  0% {
+    transform: rotateX(0deg);
+    background-color: rgb(133, 129, 129);
+  }
+  50% {
+    transform: rotateX(90deg);
+    background-color: rgb(1, 188, 1);
+  }
+  100% {
+    transform: rotateX(0deg);
+    background-color: rgb(1, 188, 1);
+    color: white;
+  }
+}
+
+@keyframes flip-gold {
+  0% {
+    transform: rotateX(0deg);
+    background-color: rgb(133, 129, 129);
+  }
+  50% {
+    transform: rotateX(90deg);
+    background-color: rgb(226, 194, 13);
+  }
+  100% {
+    transform: rotateX(0deg);
+    background-color: rgb(226, 194, 13);
+    color: white;
+  }
+}
+
+@keyframes flip-gray {
+  0% {
+    transform: rotateX(0deg);
+    background-color: rgb(133, 129, 129);
+  }
+  50% {
+    transform: rotateX(90deg);
+    background-color: gray;
+  }
+  100% {
+    transform: rotateX(0deg);
+    background-color: gray;
+    color: white;
+  }
+}

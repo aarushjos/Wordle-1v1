@@ -16,7 +16,7 @@ export default function Multiplayer() {
     setPlayerName(name);
     setOpponentWord(word);
     setIsRandom(random); // new
-    wsRef.current = new WebSocket("ws://localhost:8080");
+    wsRef.current = new WebSocket("wss://wordle-1v1.onrender.com");
 
     wsRef.current.onopen = () => {
       wsRef.current.send(JSON.stringify({

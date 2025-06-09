@@ -49,3 +49,53 @@
     opacity: 0;
   }
 }
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grids {
+    gap: 1.5rem;
+  }
+
+  .grid-layout.opponent {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+
+  .invalid-message {
+    top: 50vh;
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 600px) {
+  .grids {
+    gap: 1rem;
+  }
+
+  .grid-layout.opponent {
+    transform: scale(0.9);
+    opacity: 0.85;
+  }
+
+  .invalid-message {
+    top: 6vh;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .opp-name {
+    font-size: 1.4rem;
+  }
+  .grid-layout.opponent {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+
+  .grids {
+    gap: 0.75rem;
+  }
+
+  .invalid-message {
+    top: 20vh;
+    font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

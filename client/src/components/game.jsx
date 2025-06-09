@@ -181,7 +181,7 @@ export default function Game({ yourName, opponentName, targetWord, wsRef, isRand
           <Grid grid={grid} statusGrid={statusGrid} />
         </div>
         <div className="grid-layout opponent">
-          <h1>{isRandom ? `Word: ${opponentWord.toUpperCase()}` : opponentName}</h1>
+          <h1 className="opp-name">{isRandom ? `Word: ${opponentWord.toUpperCase()}` : opponentName}</h1>
           <OpponentGrid statusGrid={opponentStatusGrid} />
         </div>
       </div>

@@ -52,7 +52,21 @@
   color: white;
   transition: background-color 6s ease;
 }
-/* Mobile phones */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .key {
+    width: 2.75rem;
+    height: 3rem;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+  }
+
+  .key.wide {
+    width: 5.5rem;
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 600px) {
   .key {
     width: 2.5rem;
@@ -70,34 +84,32 @@
     height: auto;
     gap: 0.3rem;
   }
-}
 
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .key {
-    width: 2.75rem;
-    height: 3rem;
-    padding: 1.25rem;
-    font-size: 1.25rem;
-  }
-
-  .key.wide {
-    width: 5.5rem;
-    font-size: 0.95rem;
+  .keyboard-row {
+    gap: 0.3rem;
   }
 }
 
-/* Large screens (laptops/desktops) */
-@media (min-width: 1025px) {
+@media (max-width: 400px) {
   .key {
-    width: 3rem;
-    height: 3.25rem;
-    padding: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  .key.wide {
-    width: 6rem;
+    width: 1rem;
+    height: 1.5rem;
+    padding: 0.8rem;
     font-size: 1rem;
+  }
+
+  .key.wide {
+    width: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .keyboard {
+    width: 100vw;
+    padding: 0.5rem 0;
+    gap: 0.25rem;
+  }
+
+  .keyboard-row {
+    gap: 0.25rem;
   }
 }

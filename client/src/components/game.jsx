@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 import Grid from "./grid";
-import OpponentGrid from "./opponentGrid";
+import OpponentGrid from "./OpponentGrid";
 import Keyboard from "./keyboard";
 import { validWords } from "../../word_set_maker/validWords";
 import './game.css';

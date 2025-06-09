@@ -1,5 +1,9 @@
 const { WebSocketServer } = require("ws");
-const wss = new WebSocketServer({ port: 8080 });
+const PORT = process.env.PORT || 8080; // Use Render's port or fallback to 8080
+
+const wss = new WebSocketServer({ port: Number(PORT) });
+
+console.log(`WebSocket server started on port ${PORT}`);
 
 wss.on("connection", (ws) => {
   console.log("A player connected");

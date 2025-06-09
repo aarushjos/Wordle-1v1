@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
+  height: 20vh;
+  width: 90vw;
 }
 .keyboard-row {
   display: flex;
@@ -49,4 +51,53 @@
   background-color: rgb(40, 40, 40);
   color: white;
   transition: background-color 6s ease;
+}
+/* Mobile phones */
+@media (max-width: 600px) {
+  .key {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .key.wide {
+    width: 5rem;
+    font-size: 0.85rem;
+  }
+
+  .keyboard {
+    height: auto;
+    gap: 0.3rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .key {
+    width: 2.75rem;
+    height: 3rem;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+  }
+
+  .key.wide {
+    width: 5.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Large screens (laptops/desktops) */
+@media (min-width: 1025px) {
+  .key {
+    width: 3rem;
+    height: 3.25rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .key.wide {
+    width: 6rem;
+    font-size: 1rem;
+  }
 }

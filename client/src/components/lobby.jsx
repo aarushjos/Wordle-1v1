@@ -25,7 +25,7 @@ export default function Lobby({ onStart }) {
       return;
     }
     
-    const displayName = name.toLowerCase() === "rochelle" ? "Cutie (Kinda stoopid)" : name;
+    const displayName = name.toLowerCase() === "rochelle" ? "Cutie (but kinda stoopid)" : name;
     onStart(displayName || null, word);
   };
 

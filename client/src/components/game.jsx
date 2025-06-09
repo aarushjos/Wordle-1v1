@@ -20,9 +20,6 @@ export default function Game({ yourName, opponentName, targetWord, wsRef, isRand
   const currentRowRef = useRef(0);
   const currentColRef = useRef(0);
 
-  useEffect(() => {
-    console.log("Target Word:", targetWord.toUpperCase());
-  }, [targetWord]);
 
   useEffect(() => {
     const ws = wsRef.current;

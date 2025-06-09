@@ -177,11 +177,11 @@ export default function Game({ yourName, opponentName, targetWord, wsRef, isRand
       {message && <div className="invalid-message">{message}</div>}
       <div className="grids">
         <div className="grid-layout">
-          <h1>{yourName}</h1>
+          <h1 className="name">{yourName}</h1>
           <Grid grid={grid} statusGrid={statusGrid} />
         </div>
         <div className="grid-layout opponent">
-          <h1 className="opp-name">{isRandom ? `Word: ${opponentWord.toUpperCase()}` : opponentName}</h1>
+          <h1 className="name">{isRandom ? `Word: ${opponentWord.toUpperCase()}` : opponentName}</h1>
           <OpponentGrid statusGrid={opponentStatusGrid} />
         </div>
       </div>

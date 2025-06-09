@@ -90,6 +90,29 @@
   }
 }
 
+@media (min-width: 401px) and (max-width: 600px) {
+  .key {
+    width: 2.2rem;
+    height: 2.2rem;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .key.wide {
+    width: 3.3rem;
+    font-size: 0.85rem;
+  }
+
+  .keyboard {
+    height: auto;
+    gap: 0.3rem;
+  }
+
+  .keyboard-row {
+    gap: 0.3rem;
+  }
+}
+
 @media (max-width: 400px) {
   .key {
     width: 1rem;

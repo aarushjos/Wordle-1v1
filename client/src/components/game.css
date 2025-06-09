@@ -34,6 +34,9 @@
   animation: fadeInOut 2s forwards;
   opacity: 1;
 }
+.name {
+  font-size: 1.5rem;
+}
 
 @keyframes fadeInOut {
   0% {
@@ -80,9 +83,30 @@
     padding: 0.75rem 1.5rem;
   }
 }
+@media (min-width: 401px) and (max-width: 600px) {
+  .name {
+    font-size: 1rem;
+  }
+
+  .grid-layout.opponent {
+    transform: scale(0.85);
+    opacity: 0.9;
+  }
+
+  .grids {
+    gap: 1.25rem;
+  }
+
+  .invalid-message {
+    top: 10vh;
+    font-size: 0.9rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
 @media (max-width: 400px) {
-  .opp-name {
-    font-size: 1.4rem;
+  .name {
+    font-size: 0.8rem;
   }
   .grid-layout.opponent {
     transform: scale(0.8);

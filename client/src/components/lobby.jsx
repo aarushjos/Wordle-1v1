@@ -8,9 +8,8 @@ export default function Lobby({ onStart }) {
   const [word, setWord] = useState("");
 
   const handleRandom = () => {
-    const wordList = Array.from(guessWords).filter(w => w.length === 5);
-    const randomWord = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
-
+    const filteredWords = Array.from(guessWords).filter((w) => w.length === 5 && validWords.has(w.toUpperCase()));
+    const randomWord = filteredWords[Math.floor(Math.random() * filteredWords.length)].toUpperCase();
     setWord(randomWord);
     onStart(null, randomWord, true); // no name needed
   };
